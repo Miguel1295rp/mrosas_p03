@@ -1,18 +1,33 @@
 # Comandos de la Práctica 03
+
 ## Miguel Ángel Rosas Paz
 
+
 ## Parte I. 
+
 mkdir mrosas_p03
+
 cd mrosas_p03
+
 touch comandos_p03.md
+
 mkdir data && mkdir filtered && mkdir raw_data && mkdir meta && mkdir scripts && mkdir figures && mkdir archive
+
 mv filtered /home/genomica_2020-2/mrosas_p03/data 
+
 mv raw_data /home/genomica_2020-2/mrosas_p03/data 
+
 ###01. 
+
  1.1 *Mycoplasma genitalum*
+
  1.2 Es el gen 16s de RNA ribosomal
+
  1.3 Los marcadores moleculares son son características del ADN que pueden diferenciar a dos o más individuos, y son heredables de generación en generación. Son, aquel fragmento de ADN polimórfico (con variaciones) que nos permita distinguir entre diferentes grupos taxonómicos (hasta nivel de especie o subespecie), poblaciones, familias o individuos (Ríos, *et al*., 2009).
+
  1.4 La importancia de este marcador yace en que se encuentra en todos los organismos conocidos. Su estructura parece mantenerse por largos periodos de tiempo y, como su función no ha cambiado, los cambios en la secuencia probablemente son aleatorios (Valenzuela-González, *et al*., 2015). 
+
+
 ###02. 
 |BLAST (tipo de BLAST)|Definición                                                                                                                               |Aplicación|
 |:...................:|:.......................................................................................................................................:|:........:|
