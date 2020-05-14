@@ -29,14 +29,15 @@ mv raw_data /home/genomica_2020-2/mrosas_p03/data
 
 
 ###02. 
+
 |BLAST (tipo de BLAST)|Definición                                                                                                                               |Aplicación|
-|:...................:|:.......................................................................................................................................:|:........:|
-|BLASTP               |Compara secuencias de aminoácidos con una secuencia proteica de la base de datos                                                         |
-|BLASTN               |Compara secuencias nucleotídicas con secuencias de DNA de los bancos de datos                                                            |
-|BLASTTX              |Compara una secuencia de nucleótidos (traducida a proteínas) respecto a una proteína                                                     |
-|TBLASTN              |Compara una secuencia proteica con una secuencia nucleótidica de la base de datos traducida a todas sus pautas de lectura                |
-|TBLASTX              |Compara los seis marcos de lectura de una secuencia de nucleótidos respecto  a las seis pautas de lectura de una secuencia de nucleótidos|
-|QBLAST               |Permite a los usuarios seleccionar el tipo de archivo de salida, reduciendo el numero de conexiones a los servidores de NCBI             |  
+|.....................|:.......................................................................................................................................:|..........|
+|BLASTP               |Compara secuencias de aminoácidos con una secuencia proteica de la base de datos                                                         |.         | 
+|BLASTN               |Compara secuencias nucleotídicas con secuencias de DNA de los bancos de datos                                                            |.         |
+|BLASTTX              |Compara una secuencia de nucleótidos (traducida a proteínas) respecto a una proteína                                                     |.         |
+|TBLASTN              |Compara una secuencia proteica con una secuencia nucleótidica de la base de datos traducida a todas sus pautas de lectura                |.         |
+|TBLASTX              |Compara los seis marcos de lectura de una secuencia de nucleótidos respecto  a las seis pautas de lectura de una secuencia de nucleótidos|.         |
+|QBLAST               |Permite a los usuarios seleccionar el tipo de archivo de salida, reduciendo el numero de conexiones a los servidores de NCBI             | .        |
 
 ###03.
 En este caso el Software usado fue Bowtie. Lo primero que hicieron fue armar cuatro bibliotecas de DNA genómico de *R. toruloides* con tamaños que rondaban desde 200 pb hasta 2 y 6 kb, que fueron construidos con base en las plataformas de secuenciación de Ilumina Gaii. A partir de esto se obtuvieron datos que fueron ensamblados con el software SOAPdenovo para generar andamios del tamaño aproximado de levaduras como *Rhodotorula graminis*. Posteriormente, las lecturas se alineron con el es ensamblaje del genoma utilizando el softaware Bowtie para estimar la profundidad de secuenciación (Zhu, *et al*., 2012). 
