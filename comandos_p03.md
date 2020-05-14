@@ -17,7 +17,7 @@ mv filtered /home/genomica_2020-2/mrosas_p03/data
 
 mv raw_data /home/genomica_2020-2/mrosas_p03/data 
 
-###01. 
+### 01. 
 
  1.1 *Mycoplasma genitalum*
 
@@ -28,7 +28,7 @@ mv raw_data /home/genomica_2020-2/mrosas_p03/data
  1.4 La importancia de este marcador yace en que se encuentra en todos los organismos conocidos. Su estructura parece mantenerse por largos periodos de tiempo y, como su función no ha cambiado, los cambios en la secuencia probablemente son aleatorios (Valenzuela-González, *et al*., 2015). 
 
 
-###02. 
+### 02. 
 
 | BLAST (tipo de BLAST) | Definición | Aplicación |
 |---------|-----------|-------------|
@@ -39,16 +39,19 @@ mv raw_data /home/genomica_2020-2/mrosas_p03/data
 | TBLASTX | Compara los seis marcos de lectura de una secuencia de nucleótidos respecto  a las seis pautas de lectura de una secuencia de nucleótidos |.         |
 | QBLAST | Permite a los usuarios seleccionar el tipo de archivo de salida, reduciendo el numero de conexiones a los servidores de NCBI | .        |
 
-###03.
+### 03.
+
 En este caso el Software usado fue Bowtie. Lo primero que hicieron fue armar cuatro bibliotecas de DNA genómico de *R. toruloides* con tamaños que rondaban desde 200 pb hasta 2 y 6 kb, que fueron construidos con base en las plataformas de secuenciación de Ilumina Gaii. A partir de esto se obtuvieron datos que fueron ensamblados con el software SOAPdenovo para generar andamios del tamaño aproximado de levaduras como *Rhodotorula graminis*. Posteriormente, las lecturas se alineron con el es ensamblaje del genoma utilizando el softaware Bowtie para estimar la profundidad de secuenciación (Zhu, *et al*., 2012). 
 
 ## Parte II.
 
 ###01.
+
 El problema de los puentes de Königsberg nos remonta al siglo XVII cuando la ciudad de
 Königsberg (hoy en día llamada Kaliningrado) se encontraba dividida en cuatro áreas
 debido al cruce del río Pregel. En ese entonces, siete puentes conectaban las distintas
 áreas (Hevia, 1996).
+
 Dado las particularidades del lugar, numerosas personas solían pasear y realizar
 actividades diversas en las inmediaciones de los puentes. Los más ávidos y curiosos
 solían entretenerse de distintas maneras, aunque al parecer, nada entretenía más que
@@ -59,8 +62,10 @@ planteaba que no existía respuesta alguna. Que más bien era imposible responderl
 hecho, así fue por algún tiempo hasta que un comité de jóvenes de la ciudad visitó a
 Leonhard Euler, en 1735, para pedirle que resolviera tan conflictivo problema (Núñez, *et
 al*., 2004).
+
 El interés de Euler pronto se fijó al problema de Königsberg y tiempo después
 presentó los resultados de su trabajo:
+
 Euler logra representar una ruta mediante una sucesión de letras. Por ejemplo,
 ABDC representa a la ruta que va de A a B, de B a D, y de D a C, atravesando tres
 puentes. Si la ruta deseada existe, entonces su representación debe consistir de 8 letras
@@ -71,9 +76,11 @@ aparecer dos veces. Pero entonces, ya tendríamos nueve letras en la sucesión, cu
 para ser la ruta posible únicamente debería haber ocho. Euler dedujo entonces que no se
 podía realizar la travesía requerida a través de los siete puentes de Königsberg (Hevia,
 1996 y Núñez, *et al*., 2004).
+
 Euler no se contentó sólo con solucionar esta situación concreta, sino que se
 dedicó por completo al estudio del problema en general, obteniendo una solución que
 servía también para cualquier número de puentes:
+
 Para ello, el procedimiento que siguió Euler consistió en lo siguiente: en primer
 lugar, apuntó en un papel el número de puentes más uno (ocho, en el caso de
 Königsberg).
@@ -96,9 +103,16 @@ si esta suma es igual al número inicial (8, en este caso), la ruta comienza en u
 marcada con asterisco, y si es menor, en una señalada. En el caso de Königsberg, esta
 suma es nueve, no menor o igual que ocho, por lo que no hay solución al problema de los
 puentes de Königsberg (Núñez, *et al*., 2004).
+
+
 ## Referencias 
+
 Hevia, H. (1996). El Problema de los Siete Puentes de Konigsberg: Leonhard Euler y la Teoria de Grafos. *Educación matemática* 8(1)
+
 Núñez Valdés, J., Alfonso Pérez, M., Bueno Guillén, S., Diánez del Valle, M. D. R., y Elías Olivenza, M. D. C. D. (2004). Siete puentes, un camino: Königsberg. *Suma: revista sobre la enseñanza y aprendizaje de las matemáticas*, 45, 69-78.
+
 Ríos, E., Ruiz, H. M., y Castañeda, S. T. (2009). Marcadores moleculares: una revolucion en la Zoología. Obtenido de http://www. revistaciencia. amc. edu. mx/images/revista/60_3/PDF/01-496-Marcadores-moleculares. pdf.
+
 Valenzuela-González, F., Casillas-Hernández, R., Villalpando, E. y Vargas-Albores, F. (2015). El gen ARNr 16S en el estudio de comunidades microbianas marinas. *Ciencias marinas*, 41(4), 297-313.
+
 Zhu, Z., Zhang, S., Liu, H., Shen, H., Lin, X., Yang, F. y Zhao, Z. K. (2012). A multi-omic map of the lipid-producing yeast *Rhodosporidium toruloides*. *Nature communications*, 3(1), 1-12.
