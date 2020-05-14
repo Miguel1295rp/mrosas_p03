@@ -106,13 +106,14 @@ puentes de Königsberg (Núñez, *et al*., 2004).
 
 
 ## Referencias 
----------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-	* Hevia, H. (1996). El Problema de los Siete Puentes de Konigsberg: Leonhard Euler y la Teoria de Grafos. *Educación matemática* 8(1)
+1. Hevia, H. (1996). El Problema de los Siete Puentes de Konigsberg: Leonhard Euler y la Teoria de Grafos. *Educación matemática* 8(1)
 
-	* Núñez Valdés, J., Alfonso Pérez, M., Bueno Guillén, S., Diánez del Valle, M. D. R., y Elías Olivenza, M. D. C. D. (2004). Siete puentes, un camino: Königsberg. *Suma: revista sobre la enseñanza y aprendizaje de las matemáticas*, 45, 69-78.
+2. Núñez Valdés, J., Alfonso Pérez, M., Bueno Guillén, S., Diánez del Valle, M. D. R., y Elías Olivenza, M. D. C. D. (2004). Siete puentes, un camino: Königsberg. *Suma: revista sobre la enseñanza y aprendizaje de las matemáticas*, 45, 69-78.
 
-	* Ríos, E., Ruiz, H. M., y Castañeda, S. T. (2009). Marcadores moleculares: una revolucion en la Zoología. Obtenido de http://www.revistaciencia.amc.edu.mx/images/revista/60_3/PDF/01-496-Marcadores-moleculares.pdf.
+3. Ríos, E., Ruiz, H. M., y Castañeda, S. T. (2009). Marcadores moleculares: una revolucion en la Zoología. Obtenido de http://www.revistaciencia.amc.edu.mx/images/revista/60_3/PDF/01-496-Marcadores-moleculares.pdf.
 
-	* Valenzuela-González, F., Casillas-Hernández, R., Villalpando, E. y Vargas-Albores, F. (2015). El gen ARNr 16S en el estudio de comunidades microbianas marinas. *Ciencias marinas*, 41(4), 297-313.
-	* Zhu, Z., Zhang, S., Liu, H., Shen, H., Lin, X., Yang, F. y Zhao, Z. K. (2012). A multi-omic map of the lipid-producing yeast *Rhodosporidium toruloides*. *Nature communications*, 3(1), 1-12.
+4. Valenzuela-González, F., Casillas-Hernández, R., Villalpando, E. y Vargas-Albores, F. (2015). El gen ARNr 16S en el estudio de comunidades microbianas marinas. *Ciencias marinas*, 41(4), 297-313.
+
+5. Zhu, Z., Zhang, S., Liu, H., Shen, H., Lin, X., Yang, F. y Zhao, Z. K. (2012). A multi-omic map of the lipid-producing yeast *Rhodosporidium toruloides*. *Nature communications*, 3(1), 1-12.
