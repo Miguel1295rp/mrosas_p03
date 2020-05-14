@@ -32,12 +32,12 @@ mv raw_data /home/genomica_2020-2/mrosas_p03/data
 
 | BLAST (tipo de BLAST) | Definición | Aplicación |
 |---------|-----------|-------------|
-| BLASTP | Compara secuencias de aminoácidos con una secuencia proteica de la base de datos |.         | 
-| BLASTN | Compara secuencias nucleotídicas con secuencias de DNA de los bancos de datos |.         |
-| BLASTTX | Compara una secuencia de nucleótidos (traducida a proteínas) respecto a una proteína |.         |
-| TBLASTN | Compara una secuencia proteica con una secuencia nucleótidica de la base de datos traducida a todas sus pautas de lectura |.         |
-| TBLASTX | Compara los seis marcos de lectura de una secuencia de nucleótidos respecto  a las seis pautas de lectura de una secuencia de nucleótidos |.         |
-| QBLAST | Permite a los usuarios seleccionar el tipo de archivo de salida, reduciendo el numero de conexiones a los servidores de NCBI | .        |
+| BLASTP | Compara secuencias de aminoácidos con una secuencia proteica de la base de datos |Proteómica| 
+| BLASTN | Compara secuencias nucleotídicas con secuencias de DNA de los bancos de datos |Genómica|
+| BLASTTX | Compara una secuencia de nucleótidos (traducida a proteínas) respecto a una proteína |Proteómica y transcriptómica|
+| TBLASTN | Compara una secuencia proteica con una secuencia nucleótidica de la base de datos traducida a todas sus pautas de lectura |Genómica, proteómica y transcriptómica|
+| TBLASTX | Compara los seis marcos de lectura de una secuencia de nucleótidos respecto  a las seis pautas de lectura de una secuencia de nucleótidos |Genómica|
+| QBLAST | Permite a los usuarios seleccionar el tipo de archivo de salida, reduciendo el numero de conexiones a los servidores de NCBI |Genómica, proteómica y transcriptómica|
 
 ### 03.
 
@@ -104,16 +104,34 @@ marcada con asterisco, y si es menor, en una señalada. En el caso de Königsberg,
 suma es nueve, no menor o igual que ocho, por lo que no hay solución al problema de los
 puentes de Königsberg (Núñez, *et al*., 2004).
 
+### 02. 
+
+Errores en las lecturas. Los errores en las lecturas crean protuberancias en los gráficos de Bruijn, lo que complica el ensamblaje de secuencias. Esto se ve intensificado cuando en un genoma hay repeticiones inexactas
+
+Cromosomas múltiples y lineales. Si el cromosoma es lineal, se tiene que buscar un camino euleriano, que no es necesario que termine en el nodo donde comienza; Si hay múltiples cromosomas lineales, entonces se tiene una ruta para cada cromosoma.
+
+Regiones no secuenciadas. Las regiones no secuenciadas y los errores de secuenciación pueden dividir aún más los cromosomas en contigs (una región contigua secuenciada de ADN) y huecos (regiones no secuenciadas), con una ruta para cada contig.
+
+### 03. 
+
+¿Qué son? son estadísticas de un conjunto de longitudes contig o andamio.
+¿En qué consisten? El N50 es un estadístico que describe la contigüidad del ensamblaje del genoma a nivel de scaffolds y contigs, asumiendo que entre más largo sea este, mejor sería el ensamblaje. Se calcula ordenando por longitud de mayor a menor cada scaffolds o contig. L50 es empleado para representar el número de contigs y scaffolds, que son más largos o iguales que la longitud N50 y, por ende, incluyen la mitad de las bases del ensamblaje 
+¿Para qué se usan? Estas métricas son usadas para hacer comparaciones entre ensamblajes de genomas de diferentes tamaños 
+(García, 2018)
 
 ## Referencias 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-1. Hevia, H. (1996). El Problema de los Siete Puentes de Konigsberg: Leonhard Euler y la Teoria de Grafos. *Educación matemática* 8(1)
+1. Compeau, P. E., Pevzner, P. A. y Tesler, G. (2011). How to apply de Bruijn graphs to genome assembly. *Nature biotechnology*, 29(11), 987-991.
 
-2. Núñez Valdés, J., Alfonso Pérez, M., Bueno Guillén, S., Diánez del Valle, M. D. R., y Elías Olivenza, M. D. C. D. (2004). Siete puentes, un camino: Königsberg. *Suma: revista sobre la enseñanza y aprendizaje de las matemáticas*, 45, 69-78.
+2. Hevia, H. (1996). El Problema de los Siete Puentes de Konigsberg: Leonhard Euler y la Teoria de Grafos. *Educación matemática* 8(1)
 
-3. Ríos, E., Ruiz, H. M., y Castañeda, S. T. (2009). Marcadores moleculares: una revolucion en la Zoología. Obtenido de http://www.revistaciencia.amc.edu.mx/images/revista/60_3/PDF/01-496-Marcadores-moleculares.pdf.
+3. Núñez Valdés, J., Alfonso Pérez, M., Bueno Guillén, S., Diánez del Valle, M. D. R., y Elías Olivenza, M. D. C. D. (2004). Siete puentes, un camino: Königsberg. *Suma: revista sobre la enseñanza y aprendizaje de las matemáticas*, 45, 69-78.
 
-4. Valenzuela-González, F., Casillas-Hernández, R., Villalpando, E. y Vargas-Albores, F. (2015). El gen ARNr 16S en el estudio de comunidades microbianas marinas. *Ciencias marinas*, 41(4), 297-313.
+4. Ríos, E., Ruiz, H. M., y Castañeda, S. T. (2009). Marcadores moleculares: una revolucion en la Zoología. Obtenido de http://www.revistaciencia.amc.edu.mx/images/revista/60_3/PDF/01-496-Marcadores-moleculares.pdf.
 
-5. Zhu, Z., Zhang, S., Liu, H., Shen, H., Lin, X., Yang, F. y Zhao, Z. K. (2012). A multi-omic map of the lipid-producing yeast *Rhodosporidium toruloides*. *Nature communications*, 3(1), 1-12.
+5. Valenzuela-González, F., Casillas-Hernández, R., Villalpando, E. y Vargas-Albores, F. (2015). El gen ARNr 16S en el estudio de comunidades microbianas marinas. *Ciencias marinas*, 41(4), 297-313.
+
+6. Zhu, Z., Zhang, S., Liu, H., Shen, H., Lin, X., Yang, F. y Zhao, Z. K. (2012). A multi-omic map of the lipid-producing yeast *Rhodosporidium toruloides*. *Nature communications*, 3(1), 1-12.
+
+7. Garcia Navarrete, L. T. (2018). Estrategia computacional para detección y caracterización de bloques microsíntenicos relacionados a regiones genómicas asociadas a domesticación en frijol Lima. *Departamento de Ingeniería de Sistemas e Industrial*.
